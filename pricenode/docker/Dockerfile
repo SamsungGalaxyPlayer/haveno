@@ -28,6 +28,6 @@ RUN ./gradlew :pricenode:installDist -x test
 ENV JAVA_OPTS=""
 # expose ports
 EXPOSE 80
-EXPOSE 8078
+EXPOSE 8080
 # set launch command (tor and pricenode)
 CMD tor && /haveno/haveno/haveno-pricenode 2
